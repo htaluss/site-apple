@@ -12,7 +12,7 @@
     <script src="plugins/jquery.min.js"></script>
     <script src="plugins/bxslider.min.js"></script>
     <!--JavaScript-->
-    <script src="javascript/scripts.js"></script>
+    <script src="javascript/script.js"></script>
     <link rel="shortcut icon" href="imagens/logoico.ico" type="image/x-icon">
  </head>
  <body>
@@ -29,6 +29,7 @@
                     <li><a href="html/fotos.html">Fotos</a></li>
                     <li><a href="html/videos.html">Videos</a></li>
                     <li><a href="https://www.apple.com" target="_blank">Site Oficial</a></li>
+                    <li><button class="abrir-form" onclick="openForm()">Receba Novidades</button></li>
                 </ul>
             </nav>
         </div>
@@ -65,28 +66,45 @@
 
         </div>
     </section>
+
+    <div class="popup" id="myForm">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="closeForm()">&times;</div>
+            <h1>Receba Novidades!</h1>
+            <p>Fique por dentro do progresso do nosso site!</p>
+            <form class="form-container"></form>
+                <label for="name"><b>Nome</b></label>
+                <input class="input-form" type="text" placeholder="Nome">
+
+                <label for="email"><b>Email</b></label>
+                <input class="input-form" type="text" placeholder="Email">
+
+                <label for="phone"><b>Número</b></label>
+                <input class="input-form" type="tel" placeholder="Número do Telefone">
+
+                <button onclick="closeForm()" type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </div>
+
     <footer id="rodape">
         <span>
-            Site desenvolvido para a disciplina de Linguagem de Marcação e Formatação, 1° período do curso de Análise e Desenvolvimento de Sistema no turno matutino da Faculdade Católica Imaculada Conceição.
+            Site desenvolvido por Italo Correia para a disciplina de Linguagem de Marcação e Formatação, 1° período do curso de Análise e Desenvolvimento de Sistema no turno matutino da Faculdade Católica Imaculada Conceição.
             <br>
             <br>
             <div>
-                <a href="https://www.instagram.com/italocaraujo/?igsh=MTJuZWJremtwMzdjOQ%3D%3D">
-                    > Italo Correia
+                <a href="https://www.linkedin.com/in/italocaraujo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    > LinkedIn
                 </a>
-                <a href="https://www.instagram.com/anne.nanis/?igsh=enkwajl3bzhmYmtu">
-                    > Anne Beatriz
+                <a href="https://github.com/htaluss" target="_blank">
+                    > GitHub
                 </a>
-                <a href="https://www.instagram.com/e_m1lly.7/?igsh=bm1xZ3c5NXVqdGM2">
-                    > Emilly Camilly
-                </a>
-                <a href="https://www.instagram.com/alvarofagundes/?igsh=ampyYTdzdmU1MHJr">
-                    > Álvaro Fagundes
-                </a>
-                <a href="https://www.instagram.com/savio_aug_/?igsh=NXZ3dHdyeXZmNzY1">
-                    > Sávio Augusto
+                <a href="https://www.instagram.com/italocaraujo/?igsh=MTJuZWJremtwMzdjOQ%3D%3D" target="_blank">
+                    > instagram
                 </a>
             </div>
+            © 2024 Italo Correia - Todos os direitos reservados.
         </span>
     </footer>
  </body>

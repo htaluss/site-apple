@@ -11,6 +11,10 @@ html {
     font-family: "Radio Canada Big", sans-serif;
 }
 
+body.popup-open {
+    overflow: hidden;
+}
+
 /*Global*/
 .container {
     max-width: 1200px;
@@ -60,6 +64,11 @@ html {
     color: black;
 }
 
+#cabecalho #menu button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
 /*Inicio Historia*/
 #historia {
     padding-top: 50px;
@@ -79,12 +88,12 @@ html {
 
 }
 
-/*inicio modelos*/
+/*iphone*/
 #modelos .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 #modelos .container div {
@@ -94,7 +103,44 @@ html {
     justify-content: center;
     flex-direction: column;
     margin-top: 70px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+}
+
+#modelos .container div a img {
+    -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
+    width: 270px;
+}
+
+#modelos .container div a img:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.tab-sobre {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tab-sobre p {
+    color: #0071e3;
+    font-size: 20px;
+}
+
+.tab-sobre a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #0071e3;
+}
+
+.tab-sobre a:hover {
+    text-decoration: underline;
+}
+
+#modelos .container  {
+    display: flex;
+    justify-content: center;
 }
 
 #modelos .container div p {
@@ -147,7 +193,59 @@ html {
     box-shadow: 3px 3px 10px #06c;
 }
 
-/*inicio fotos*/
+/*sobre*/
+
+.sb-tabela {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+  caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  thead,
+  tfoot {
+    background-color: rgb(228 240 245);
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+  }
+  
+  td:last-of-type {
+    text-align: center;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+  }
+
+.p-sobre {
+    padding: 0 300px;
+    text-align: justify;
+    margin: 50px 0;
+}
+
+.img-phones {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/*fotos*/
 
 #fotos .container{
     display: grid;
@@ -166,7 +264,7 @@ html {
     transform: scale(0.9);
 }
 
-/*inicio videos*/
+/*videos*/
 
 #videos .container{
     display: grid;
@@ -179,11 +277,96 @@ html {
     width: 100%;
 }
 
-/*inicio rodape*/
+/*botão receba novidades*/
+.abrir-form {
+    padding: 20px;
+    text-decoration: none;
+    color: #ccc;
+    background-color: black;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+
+/*form*/
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+  
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 450px;
+    height: 470px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .content p {
+    padding-bottom: 30px;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    color: #222;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+label {
+    display: flex;
+    padding-left: 10px;
+}
+
+.input-form {
+    width: 400px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/*botão enviar*/
+.btn {
+    background-color: #000000;
+    color: white;
+    padding: 16px 10px;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    opacity: 0.8;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: #131313;
+}
+
+/*rodape*/
 
 #rodape{
     background-color: #000;
-    padding: 30px 400px;
+    padding: 30px 350px;
     color: #666;
     text-align: center;
     font-size: 12px;

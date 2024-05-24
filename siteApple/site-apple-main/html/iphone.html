@@ -13,7 +13,7 @@
     <script src="../plugins/jquery.min.js"></script>
     <script src="../plugins/bxslider.min.js"></script>
     <!--JavaScript-->
-    <script src="../javascript/scripts.js"></script>
+    <script src="../javascript/script.js"></script>
     <link rel="shortcut icon" href="..//imagens/logoico.ico" type="image/x-icon">
 </head>
 
@@ -31,6 +31,7 @@
                     <li><a href="fotos.html">Fotos</a></li>
                     <li><a href="videos.html">Videos</a></li>
                     <li><a href="https://www.apple.com" target="_blank">Site Oficial</a></li>
+                    <li><button class="abrir-form" onclick="openForm()">Receba Novidades</button></li>
                 </ul>
             </nav>
         </div>
@@ -48,61 +49,170 @@
         <h2 class="titulo">iPhone</h2>
         <div class="container">
                 <div class="modelos-div">
-                    <img src="../imagens/iphones/iphone15pro.png" alt="iPhone 15 Pro" class="iph15pro">
+                    <a href="https://www.apple.com/iphone-15-pro/" target="_blank">
+                        <img src="../imagens/iphones/iphone15pro.png" alt="iPhone 15 Pro" class="iph15pro">
+                    </a>
                     <h3>iPhone 15 Pro</h3>
                     <p>O iPhone definitivo.</p>
-                    <a href="https://www.apple.com/shop/buy-iphone/iphone-15-pro" class="btn-comprar">
+                    <a href="https://www.apple.com/shop/buy-iphone/iphone-15-pro" class="btn-comprar" target="_blank">
                         Comprar
                     </a>
                 </div>
 
                 <div>
-                    <img src="../imagens/iphones/iphone15.png" alt="iPhone 15" class="iph15">
+                    <a href="https://www.apple.com/iphone-15/" target="_blank">
+                        <img src="../imagens/iphones/iphone15.png" alt="iPhone 15" class="iph15">
+                    </a>
                     <h3 id="title-iphone">iPhone 15</h3>
                     <p>Uma potência total.</p>
-                    <a href="https://www.apple.com/shop/buy-iphone/iphone-15" class="btn-comprar">Comprar</a>
+                    <a href="https://www.apple.com/shop/buy-iphone/iphone-15" class="btn-comprar" target="_blank">
+                        Comprar
+                    </a>
                 </div>
 
                 <div>
-                    <img src="../imagens/iphones/iphone14.png" alt="iPhone 14" class="iph14">
+                    <a href="https://www.apple.com/iphone-14/specs/" target="_blank">
+                        <img src="../imagens/iphones/iphone14.png" alt="iPhone 14" class="iph14">
+                    </a>
                     <h3>iPhone 14</h3>
                     <p>Tão incrível como sempre.</p>
-                    <a href="https://www.apple.com/shop/buy-iphone/iphone-14" class="btn-comprar">Comprar</a>
+                    <a href="https://www.apple.com/shop/buy-iphone/iphone-14" class="btn-comprar" target="_blank">
+                        Comprar
+                    </a>
                 </div>
 
                 <div>
-                    <img src="../imagens/iphones/iphone13.png" alt="iPhone 13" class="iph13">
+                    <a href="https://www.apple.com/iphone-13/specs/" target="_blank">
+                        <img src="../imagens/iphones/iphone13.png" alt="iPhone 13" class="iph13">
+                    </a>
                     <h3>iPhone 13</h3>
                     <p>Todos os tipos de incrível.</p>
-                    <a href="https://www.apple.com/shop/buy-iphone/iphone-13" class="btn-comprar">Comprar</a>
+                    <a href="https://www.apple.com/shop/buy-iphone/iphone-13" class="btn-comprar" target="_blank">
+                        Comprar
+                    </a>
                 </div>
         </div>
+        <div class="sb-tabela">
+            <table>
+                <caption>
+                    Especificação dos iPhones
+                  </caption>
+                  <thead>
+                    <tr>
+                        <th scope="col">iPhone</th>
+                        <th scope="col">GPU</th>
+                        <th scope="col">Câmera</th>
+                        <th scope="col">Bateria</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <th scope="row">iPhone 15 Pro</th>
+                        <td>Chip A17 Pro com GPU de 6 núcleos</td>
+                        <td>Sistema de câmera profissional
+                            <br>
+                            Nossa câmera principal de 48MP mais avançada
+                            <br>
+                            Câmera telefoto 3x ou 5x
+                            <br>
+                            Câmera ultra-ampla
+                        </td>
+                        <td>Até 29 horas de reprodução de vídeo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">iPhone 15</th>
+                        <td>Chip A16 Bionic com GPU de 5 núcleos</td>
+                        <td>Sistema avançado de câmera dupla
+                            <br>
+                            Câmera principal de 48MP
+                            <br>
+                            2x Telefoto
+                            <br>
+                            Câmera ultra-ampla
+                        </td>
+                        <td>Até 26 horas de reprodução de vídeo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">iPhone 14</th>
+                        <td>Chip A15 Bionic com GPU de 5 núcleos</td>
+                        <td>Sistema de câmera dupla
+                            <br>
+                            Câmera principal de 12MP
+                            <br>
+                            Câmera telefoto não aplicável
+                            <br>
+                            Câmera ultra-ampla
+                        </td>
+                        <td>Até 26 horas de reprodução de vídeo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">iPhone 13</th>
+                        <td>Chip A15 Bionic com GPU de 4 núcleos</td>
+                        <td>Sistema de câmera dupla
+                            <br>
+                            Câmera principal de 12MP
+                            <br>
+                            Câmera telefoto não aplicável
+                            <br>
+                            Câmera ultra-ampla
+                        </td>
+                        <td>Até 19 horas de reprodução de vídeo</td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div>
+        
+        <p class="p-sobre">
+            Os iPhones oferecem uma série de vantagens que os tornam uma escolha popular para muitos consumidores. Uma das principais vantagens é o sistema operacional integrado, o iOS, que é meticulosamente projetado para funcionar perfeitamente com o hardware da Apple. Isso resulta em um desempenho suave e uma experiência de usuário coesa.
+            Além disso, as atualizações de software regulares fornecidas pela Apple garantem que os iPhones permaneçam atualizados e seguros por vários anos após o lançamento. Isso significa que os usuários podem desfrutar das últimas funcionalidades e melhorias de segurança sem precisar trocar de dispositivo com tanta frequência.
+            A qualidade da construção e o design elegante são outras vantagens dos iPhones. Eles são conhecidos por sua durabilidade e estética premium, o que os torna uma escolha atraente para quem valoriza o estilo e a qualidade do produto.
+            Além disso, o ecossistema da Apple, que inclui integração perfeita com outros dispositivos da marca, como Macs, iPads e Apple Watches, oferece uma experiência de usuário completa e interconectada.
+            Em resumo, os iPhones oferecem não apenas um excelente desempenho e design, mas também uma experiência de usuário integrada e atualizações regulares de software, tornando-os uma escolha sólida para muitos consumidores.
+        </p>
+        <div class="img-phones">
+            <img src="../imagens/iphones-novos.png" alt="iPhones" class="img-phones">
+        </div>
     </section>
+
+    <div class="popup" id="myForm">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="closeForm()">&times;</div>
+            <h1>Receba Novidades!</h1>
+            <p>Fique por dentro do progresso do nosso site!</p>
+            <form class="form-container"></form>
+                <label for="name"><b>Nome</b></label>
+                <input class="input-form" type="text" placeholder="Nome">
+
+                <label for="email"><b>Email</b></label>
+                <input class="input-form" type="text" placeholder="Email">
+
+                <label for="phone"><b>Número</b></label>
+                <input class="input-form" type="tel" placeholder="Número do Telefone">
+
+                <button onclick="closeForm()" type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </div>
+
     <footer id="rodape">
         <span>
-            Site desenvolvido para a disciplina de Linguagem de Marcação e Formatação, 1° período do curso de Análise e Desenvolvimento de Sistema no turno matutino da Faculdade Católica Imaculada Conceição.
+            Site desenvolvido por Italo Correia para a disciplina de Linguagem de Marcação e Formatação, 1° período do curso de Análise e Desenvolvimento de Sistema no turno matutino da Faculdade Católica Imaculada Conceição.
             <br>
             <br>
             <div>
-                <a href="https://www.instagram.com/italocaraujo/?igsh=MTJuZWJremtwMzdjOQ%3D%3D">
-                    > Italo Correia
+                <a href="https://www.linkedin.com/in/italocaraujo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    > LinkedIn
                 </a>
-                <a href="https://www.instagram.com/anne.nanis/?igsh=enkwajl3bzhmYmtu">
-                    > Anne Beatriz
+                <a href="https://github.com/htaluss" target="_blank">
+                    > GitHub
                 </a>
-                <a href="https://www.instagram.com/e_m1lly.7/?igsh=bm1xZ3c5NXVqdGM2">
-                    > Emilly Camilly
-                </a>
-                <a href="https://www.instagram.com/alvarofagundes/?igsh=ampyYTdzdmU1MHJr">
-                    > Álvaro Fagundes
-                </a>
-                <a href="https://www.instagram.com/savio_aug_/?igsh=NXZ3dHdyeXZmNzY1">
-                    > Sávio Augusto
+                <a href="https://www.instagram.com/italocaraujo/?igsh=MTJuZWJremtwMzdjOQ%3D%3D" target="_blank">
+                    > instagram
                 </a>
             </div>
+            © 2024 Italo Correia - Todos os direitos reservados.
         </span>
     </footer>
-
 </body>
-
 </html>
