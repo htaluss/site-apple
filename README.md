@@ -4,7 +4,7 @@ Este repositório contém o código-fonte de um clone do site da Apple, criado c
 
 ## 🔨 Funcionalidades do projeto
 
-O Apple Website Clone recria o site da Apple com várias funcionalidades principais:
+O Apple Website recria o site da Apple com várias funcionalidades principais:
 uma página inicial responsiva, um menu de navegação intuitivo, uma seção de produtos, uma página sobre a história da Apple, 
 detalhes dos modelos mais recentes de iPhones e uma galeria de fotos tiradas por iPhones.
 
