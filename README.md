@@ -18,7 +18,7 @@ detalhes dos modelos mais recentes de iPhones e uma galeria de fotos tiradas por
 
 ## 📁 Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto inicial](https://site-apple-phi.vercel.app/html/iphone.html) ou [baixá-lo](https://github.com/htaluss/site-apple/archive/refs/heads/main.zip).
+Você pode [acessar o código fonte do projeto inicial](https://site-apple-blush.vercel.app/html/iphone.html) ou [baixá-lo](https://github.com/htaluss/site-apple/archive/refs/heads/main.zip).
 
 ## 🛠️ Abrir e rodar o projeto
 
