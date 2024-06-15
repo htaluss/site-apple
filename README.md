@@ -12,9 +12,9 @@ detalhes dos modelos mais recentes de iPhones e uma galeria de fotos tiradas por
 
 ## ✔️ Tecnologias Utilizadas
 
-- HTML5: Estruturação do conteúdo do site.
-- CSS3: Estilização e layout.
-- JavaScript: Interatividade e funcionalidades dinâmicas.
+- **HTML5:** Estruturação do conteúdo do site.
+- **CSS3:** Estilização e layout.
+- **JavaScript:** Interatividade e funcionalidades dinâmicas.
 
 ## 📁 Acesso ao projeto
 
