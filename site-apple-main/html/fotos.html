@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple - Fotos</title>
+    <!--Css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--plugins-->
+    <!--slider-->
+    <link rel="stylesheet" href="../plugins/bxslider.css">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/bxslider.min.js"></script>
+    <!--popup-->
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+    <script src="../plugins/magnific-popup.js"></script>
+    <!--JavaScript-->
+    <script src="../javascript/script.js"></script>
+    <link rel="shortcut icon" href="..//imagens/logoico.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="container">
+            <a href="../index.html">
+                <img src="../imagens/logo_apple_branco.png" alt="Logo branco" class="logo">
+            </a>
+            <nav id="menu">
+                <input id="menu-hamburguer" type="checkbox"/>
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <ul class="menu-hamburguer-elements show">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../index.html#historia">História</a></li>
+                    <li><a href="iphone.html">iPhone</a></li>
+                    <li><a href="fotos.html">Fotos</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="https://www.apple.com" target="_blank">Site Oficial</a></li>
+                    <li><button class="abrir-form" onclick="openForm()">Receba Novidades</button></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+    <div id="banners">
+        <div class="container">
+            <ul>
+                <li><img src="../imagens/banners/banner_01.jpg" alt="iPhone 13"></li>
+                <li><img src="../imagens/banners/banner_02.jpg" alt="iPhone 13 Pro"></li>
+                <li><img src="../imagens/banners/banner_03.jpg" alt="iPhone SE"></li>
+            </ul>
+        </div>
+    </div>
+    <section id="fotos">
+        <h2 class="titulo">Fotos</h2>
+        <div class="container">
+            <a href="../imagens/fotos/fotosg/foto01.jpg"><img src="../imagens/fotos/fotosp/foto01.jpg" alt="foto 1"></a>
+            <a href="../imagens/fotos/fotosg/foto02.jpg"><img src="../imagens/fotos/fotosp/foto02.jpg" alt="foto 2"></a>
+            <a href="../imagens/fotos/fotosg/foto03.jpg"><img src="../imagens/fotos/fotosp/foto03.jpg" alt="foto 3"></a>
+            <a href="../imagens/fotos/fotosg/foto04.jpg"><img src="../imagens/fotos/fotosp/foto04.jpg" alt="foto 4"></a>
+            <a href="../imagens/fotos/fotosg/foto05.jpg"><img src="../imagens/fotos/fotosp/foto05.jpg" alt="foto 5"></a>
+            <a href="../imagens/fotos/fotosg/foto06.jpg"><img src="../imagens/fotos/fotosp/foto06.jpg" alt="foto 6"></a>
+            <a href="../imagens/fotos/fotosg/foto07.jpg"><img src="../imagens/fotos/fotosp/foto07.jpg" alt="foto 7"></a>
+            <a href="../imagens/fotos/fotosg/foto08.jpg"><img src="../imagens/fotos/fotosp/foto08.jpg" alt="foto 8"></a>
+        </div>
+    </section>
+
+    <div class="popup" id="myForm">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="closeForm()">&times;</div>
+            <h1>Receba Novidades!</h1>
+            <p>Fique por dentro do progresso do nosso site!</p>
+            <form action="../cad.php" method="get" class="form-container">
+                <label for="name">
+                    <b>Nome</b>
+                </label>
+                <input class="input-form" name="nome" type="text" placeholder="Nome">
+
+                <label for="email">
+                    <b>Email</b>
+                </label>
+                <input class="input-form" name="email" type="text" placeholder="Email">
+
+                <label for="phone">
+                    <b>Número</b>
+                </label>
+                <input class="input-form" name="tel" type="tel" placeholder="Número do Telefone">
+
+                <input onclick="closeForm()" type="submit" class="btn" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <footer id="rodape">
+        <span>
+            Site desenvolvido por Italo Correia para a disciplina de Linguagem de Marcação e Formatação, 1° período do curso de Análise e Desenvolvimento de Sistema no turno matutino da Faculdade Católica Imaculada Conceição.
+            <br>
+            <br>
+            <div>
+                <a href="https://www.linkedin.com/in/italocaraujo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    > LinkedIn
+                </a>
+                <a href="https://github.com/htaluss" target="_blank">
+                    > GitHub
+                </a>
+                <a href="https://www.instagram.com/italocaraujo/?igsh=MTJuZWJremtwMzdjOQ%3D%3D" target="_blank">
+                    > instagram
+                </a>
+            </div>
+            © 2024 Italo Correia - Todos os direitos reservados.
+        </span>
+    </footer>
+</body>
+</html>

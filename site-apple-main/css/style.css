@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@import url(header.css);
+@import url(historia.css);
+@import url(iphone.css);
+@import url(fotos.css);
+@import url(videos.css);
+@import url(form.css);
+@import url(footer.css);
+
+html {
+    scroll-behavior: smooth; /*quando clica no link para a própria pagina ele vai devagar*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+body {
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+}
+
+body.popup-open {
+    overflow: hidden;
+}

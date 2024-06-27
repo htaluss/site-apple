@@ -1,0 +1,411 @@
+/* MODELOS */
+
+#modelos .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+#modelos .container div {
+    width: 270px;
+    height: 476px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+#modelos .container div a img {
+    -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
+    width: 270px;
+}
+
+#modelos .container div a img:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.tab-sobre {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tab-sobre p {
+    color: #0071e3;
+    font-size: 20px;
+}
+
+.tab-sobre a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #0071e3;
+}
+
+.tab-sobre a:hover {
+    text-decoration: underline;
+}
+
+#modelos .container  {
+    display: flex;
+    justify-content: center;
+}
+
+#modelos .container div p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#modelos .container h3 {
+    margin-bottom: 5px;
+    font-family: "Radio Canada Big", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#modelos .iph15pro {
+    margin-bottom: 56px;
+}
+
+#modelos .iph15 {
+    margin-bottom: 30px;
+}
+
+#modelos .iph14 {
+    margin-bottom: 30px;
+}
+
+#modelos .iph13 {
+    margin-bottom: 15px;
+}
+
+#modelos .btn-comprar {
+    background-color: #0071e3;
+    font-family: "Radio Canada Big", sans-serif;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    transition: all .5s linear;
+    font-weight: 450;
+}
+
+#modelos .btn-comprar:hover {
+    color: #0071e3;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px #06c;
+}
+
+/* TABELA */
+
+.sb-tabela {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+  caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  thead,
+  tfoot {
+    background-color: rgb(228 240 245);
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+  }
+  
+  td:last-of-type {
+    text-align: center;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: #edeef2;
+  }
+
+.p-sobre {
+  padding: 0 400px;
+  text-align: justify;
+  margin: 50px 0;
+}
+
+/*Card Compare*/
+
+.cards-duvidas {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.cards-guia {
+  position: relative; /* Permitir que os elementos filhos sejam posicionados absolutamente */
+  box-shadow: 2px 4px 12px #00000014;
+  width: 480px;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  overflow: hidden; /* Garantir que a imagem e o conteúdo fiquem dentro do card */
+}
+
+.cards-guia:hover {
+  transform: scale(1.02);
+  transition: all .3s cubic-bezier(0,0,.5,1);
+}
+.card-image-guia {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta a imagem para cobrir todo o card */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Garantir que a imagem fique abaixo do conteúdo */
+}
+
+.card-guia-content {
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 2; /* Garantir que o conteúdo fique sobre a imagem */
+}
+
+.cards-guia a {
+  text-decoration: none;
+  color: inherit; /* Herdar a cor do conteúdo */
+}
+
+.cards-guia a p {
+  color: #6e6e73;
+  font-size: 0.75rem;
+}
+
+.cards-guia a h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+/*cards responsivo*/
+
+.wrapper { 
+  vertical-align: top;
+  width: 100%;
+  display: none;
+} 
+
+.wrapper i { 
+  height: 50px; 
+  width: 50px; 
+  text-align: center; 
+  line-height: 50px; 
+  border-radius: 50%; 
+  cursor: pointer; 
+  position: absolute; 
+  top: 62%; 
+  font-size: 1.25rem; 
+  transform: translateY(-50%); 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23); 
+  margin: 30px;
+} 
+
+.wrapper i:first-child { 
+  left: -22px; 
+
+} 
+
+.wrapper i:last-child { 
+  right: -22px; 
+
+} 
+
+.wrapper .carousel { 
+  display: grid; 
+  grid-auto-flow: column; 
+  grid-auto-columns: calc((100% / 3) - 12px); 
+  overflow-x: auto; 
+  
+  scroll-snap-type: x mandatory; 
+  scroll-behavior: smooth; 
+  scrollbar-width: 0; 
+
+  width: 100%;
+  
+} 
+
+.carousel::-webkit-scrollbar { 
+  display: none; 
+} 
+
+.carousel :where(.card) { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+} 
+
+.carousel.dragging { 
+  scroll-snap-type: none; 
+  scroll-behavior: auto; 
+} 
+
+.carousel.no-transition { 
+  scroll-behavior: auto; 
+} 
+
+.carousel.dragging .card { 
+  cursor: grab; 
+  user-select: none; 
+} 
+
+.carousel .card { 
+  scroll-snap-align: start; 
+  height: 500px; 
+  list-style: none; 
+  background: #fff; 
+  border-radius: 18px; 
+  display: flex; 
+  cursor: pointer; 
+  width: 400px; 
+  padding-bottom: 15px; 
+  flex-direction: column;
+  box-shadow: 2px 4px 12px #00000014;
+  margin: 40px 0px;
+} 
+
+.card h3 { 
+  margin-bottom: 5px;
+  font-family: "Radio Canada Big", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  letter-spacing: .007em;
+  font-weight: 500;
+  color: #1d1d1f;
+}
+
+
+.card span { 
+  color: #6a6d78; 
+  font-size: 1.31rem; 
+
+} 
+
+.card-btn-valor {
+  width: 340px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  #modelos .container {
+    display: none;
+  }
+
+  .wrapper {
+    display: inline-flex;
+  }
+
+  .wrapper .carousel { 
+    grid-auto-columns: calc((100% / 2.3) - 9px); 
+    margin: 0px 20px 70px 20px; 
+  } 
+
+  .card {
+    padding: 10px 30px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .card p {
+    padding-bottom: 8px;
+  }
+
+  .card h3 {
+    line-height: 1.8428571429rem;
+    padding-top: 30px;
+  }
+
+  .card .img {
+    margin: auto;
+  }
+
+  .card-move-iphone {
+    width: 80%;
+  }
+
+  .card-move-iphone img {
+    width: 80%;
+  }
+
+  .p-sobre {
+    padding: 0px 80px;
+  }
+
+  .sb-tabela {
+    margin: 0px 30px;
+  }
+
+  
+}
+
+@media screen and (max-width: 480px) { 
+  #modelos .container {
+    display: none;
+  }
+
+  .wrapper .carousel { 
+    grid-auto-columns: 100%; 
+    margin: 0px 20px 70px 20px; 
+    gap: 40px;
+    width: 90%;
+  } 
+
+  .wrapper .carousel .card {
+    width: 98%;
+  }
+
+  .btn-comprar {
+    margin: auto;
+  }
+
+  .p-sobre {
+    padding: 0px 25px;
+  }
+
+  .cards-duvidas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-guia {
+    width: 80%;
+  }
+
+}

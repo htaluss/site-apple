@@ -1,0 +1,34 @@
+#rodape {
+    background-color: #1d1d1f;
+    padding: 30px 400px;
+    color: #666;
+    text-align: center;
+    font-size: 12px;
+}
+
+#rodape span div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+#rodape a {
+    text-decoration: none;
+    color: #06c;
+    transition: .3s linear;
+}
+
+#rodape a:hover {
+    background-color: #06c;
+    color: #000;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    #rodape {
+        padding: 30px 40px;
+    }
+
+}

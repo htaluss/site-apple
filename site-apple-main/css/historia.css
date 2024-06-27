@@ -1,0 +1,59 @@
+#historia {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#historia img {
+    float: left;
+    margin-right: 20px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+#historia p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.texto-historia {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1024px){
+
+    #historia {
+        margin: 0px 40px;
+    }
+
+    .content-historia {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .texto-historia {
+        margin: 0px 80px;
+    }
+
+    #historia img {
+        margin: 0;
+        width: 800px;
+    }
+
+}
+
+@media screen and (max-width: 480px) { 
+    
+    html {
+        width: 100vw;
+    }
+    
+    .texto-historia {
+        margin: 0px;
+    }
+
+    #historia img {
+        width: 100%;
+    }
+}
