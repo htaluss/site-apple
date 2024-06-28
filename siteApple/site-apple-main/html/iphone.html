@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="../css/style.css">
     <!--plugins-->
     <link rel="stylesheet" href="../plugins/bxslider.css">
+    <!--JavaScript-->
+    <script src="../javascript/swipe.js"></script>
     <script src="../plugins/jquery.min.js"></script>
     <script src="../plugins/bxslider.min.js"></script>
-    <!--JavaScript-->
     <script src="../javascript/script.js"></script>
+    <link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> 
     <link rel="shortcut icon" href="..//imagens/logoico.ico" type="image/x-icon">
 </head>
 
@@ -24,15 +27,22 @@
                 <img src="../imagens/logo_apple_branco.png" alt="Logo branco" class="logo">
             </a>
             <nav id="menu">
-                <ul>
+                <input id="menu-hamburguer" type="checkbox"/>
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <ul class="menu-hamburguer-elements show">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../index.html#historia">História</a></li>
+                    <li><a href="#historia">História</a></li>
                     <li><a href="iphone.html">iPhone</a></li>
                     <li><a href="fotos.html">Fotos</a></li>
                     <li><a href="videos.html">Videos</a></li>
                     <li><a href="https://www.apple.com" target="_blank">Site Oficial</a></li>
                     <li><button class="abrir-form" onclick="openForm()">Receba Novidades</button></li>
                 </ul>
+                
             </nav>
         </div>
     </header>
@@ -48,50 +58,106 @@
     <section id="modelos">
         <h2 class="titulo">iPhone</h2>
         <div class="container">
-                <div class="modelos-div">
-                    <a href="https://www.apple.com/iphone-15-pro/" target="_blank">
-                        <img src="../imagens/iphones/iphone15pro.png" alt="iPhone 15 Pro" class="iph15pro">
-                    </a>
-                    <h3>iPhone 15 Pro</h3>
-                    <p>O iPhone definitivo.</p>
-                    <a href="https://www.apple.com/shop/buy-iphone/iphone-15-pro" class="btn-comprar" target="_blank">
-                        Comprar
-                    </a>
-                </div>
+            <div class="modelos-div">
+                <a href="https://www.apple.com/iphone-15-pro/" target="_blank">
+                    <img src="../imagens/iphones/iphone15pro.png" alt="iPhone 15 Pro" class="iph15pro">
+                </a>
+                <h3>iPhone 15 Pro</h3>
+                <p>O iPhone definitivo.</p>
+                <a href="https://www.apple.com/shop/buy-iphone/iphone-15-pro" class="btn-comprar" target="_blank">
+                    Comprar
+                </a>
+            </div>
 
-                <div>
-                    <a href="https://www.apple.com/iphone-15/" target="_blank">
-                        <img src="../imagens/iphones/iphone15.png" alt="iPhone 15" class="iph15">
-                    </a>
-                    <h3 id="title-iphone">iPhone 15</h3>
-                    <p>Uma potência total.</p>
-                    <a href="https://www.apple.com/shop/buy-iphone/iphone-15" class="btn-comprar" target="_blank">
-                        Comprar
-                    </a>
-                </div>
+            <div>
+                <a href="https://www.apple.com/iphone-15/" target="_blank">
+                    <img src="../imagens/iphones/iphone15.png" alt="iPhone 15" class="iph15">
+                </a>
+                <h3 id="title-iphone">iPhone 15</h3>
+                <p>Uma potência total.</p>
+                <a href="https://www.apple.com/shop/buy-iphone/iphone-15" class="btn-comprar" target="_blank">
+                     Comprar
+                </a>
+            </div>
 
-                <div>
-                    <a href="https://www.apple.com/iphone-14/specs/" target="_blank">
-                        <img src="../imagens/iphones/iphone14.png" alt="iPhone 14" class="iph14">
-                    </a>
-                    <h3>iPhone 14</h3>
-                    <p>Tão incrível como sempre.</p>
-                    <a href="https://www.apple.com/shop/buy-iphone/iphone-14" class="btn-comprar" target="_blank">
-                        Comprar
-                    </a>
-                </div>
+            <div>
+                <a href="https://www.apple.com/iphone-14/specs/" target="_blank">
+                    <img src="../imagens/iphones/iphone14.png" alt="iPhone 14" class="iph14">
+                </a>
+                <h3>iPhone 14</h3>
+                <p>Tão incrível como sempre.</p>
+                <a href="https://www.apple.com/shop/buy-iphone/iphone-14" class="btn-comprar" target="_blank">
+                    Comprar
+                </a>
+            </div>
 
-                <div>
-                    <a href="https://www.apple.com/iphone-13/specs/" target="_blank">
-                        <img src="../imagens/iphones/iphone13.png" alt="iPhone 13" class="iph13">
-                    </a>
-                    <h3>iPhone 13</h3>
-                    <p>Todos os tipos de incrível.</p>
-                    <a href="https://www.apple.com/shop/buy-iphone/iphone-13" class="btn-comprar" target="_blank">
-                        Comprar
-                    </a>
-                </div>
+            <div>
+                <a href="https://www.apple.com/iphone-13/specs/" target="_blank">
+                    <img src="../imagens/iphones/iphone13.png" alt="iPhone 13" class="iph13">
+                </a>
+                <h3>iPhone 13</h3>
+                <p>Todos os tipos de incrível.</p>
+                <a href="https://www.apple.com/shop/buy-iphone/iphone-13" class="btn-comprar" target="_blank">
+                    Comprar
+                </a>
+            </div>
         </div>
+
+        <div class="wrapper"> 
+            <i id="left" class="fa-solid  fas fa-angle-left"></i> 
+            <ul class="carousel">
+
+                <li class="card"> 
+                    <h3>iPhone 15 Pro e 
+                       <br> iPhone 15 Pro Max</h3> 
+                    <div class="img"><img src="../imagens/iphones/iphone15pro.png" alt="iPhone 15 Pro" draggable="false"> </div>                 
+                    <div class="card-btn-valor">
+                        <p>A partir de R$ 9.299</p>
+                        <a href="https://www.apple.com/shop/buy-iphone/iphone-15-pro" class="btn-comprar" target="_blank">
+                            Comprar
+                        </a>
+                    </div>
+                </li> 
+
+                <li class="card"> 
+                    <h3>iPhone 15 e 
+                       <br> iPhone 15 Plus</h3> 
+                    <div class="img"><img src="../imagens/iphones/iphone15.png" alt="iPhone 15" draggable="false"> </div>                 
+                    <div class="card-btn-valor">
+                        <p>A partir de R$ 7.299</p>
+                        <a href="https://www.apple.com/shop/buy-iphone/iphone-15" class="btn-comprar" target="_blank">
+                            Comprar
+                        </a>
+                    </div>
+                </li> 
+
+                <li class="card"> 
+                    <h3>iPhone 14 e 
+                       <br> iPhone 14 Plus</h3> 
+                    <div class="img"><img src="../imagens/iphones/iphone14.png" alt="iPhone 15" draggable="false"> </div>                 
+                    <div class="card-btn-valor">
+                        <p>A partir de R$ 5.999</p>
+                        <a href="https://www.apple.com/shop/buy-iphone/iphone-14" class="btn-comprar" target="_blank">
+                            Comprar
+                        </a>
+                    </div>
+                </li> 
+
+                <li class="card"> 
+                    <h3>iPhone 13</h3> 
+                    <div class="img"><img src="../imagens/iphones/iphone13.png" alt="iPhone 15" draggable="false"> </div>                 
+                    <div class="card-btn-valor">
+                        <p>A partir de R$ 5.499</p>
+                        <a href="https://www.apple.com/shop/buy-iphone/iphone-13" class="btn-comprar" target="_blank">
+                            Comprar
+                        </a>
+                    </div>
+                </li> 
+                 
+            </ul> 
+            <i id="right" class="fa-solid fas fa-angle-right"></i> 
+        </div>
+
         <div class="sb-tabela">
             <table>
                 <caption>
@@ -169,9 +235,29 @@
             Além disso, o ecossistema da Apple, que inclui integração perfeita com outros dispositivos da marca, como Macs, iPads e Apple Watches, oferece uma experiência de usuário completa e interconectada.
             Em resumo, os iPhones oferecem não apenas um excelente desempenho e design, mas também uma experiência de usuário integrada e atualizações regulares de software, tornando-os uma escolha sólida para muitos consumidores.
         </p>
-        <div class="img-phones">
-            <img src="../imagens/iphones-novos.png" alt="iPhones" class="img-phones">
+
+        <div class="cards-duvidas">
+            <div class="cards-guia">
+                <a href="https://www.apple.com/br/iphone/switch/">
+                    <img src="../imagens/iphones-card-switch.jpeg" alt="iPhones Switch" class="card-image-guia">
+                    <div class="card-guia-content">
+                        <p>VEM PARA O IPHONE</p>
+                        <h2>Mudar para o iPhone é muito fácil.</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="cards-guia">
+                <a href="https://www.apple.com/br/iphone/compare/" target="_blank">
+                    <img src="../imagens/iphone-card-compare.jpeg" alt="iPhones Compare" class="card-image-guia">
+                    <div class="card-guia-content">
+                        <p>COMPARAR TODOS OS MODELOS</p>
+                        <h2>Qual é o iPhone ideal para você?</h2>
+                    </div>
+                    
+                </a>
+            </div>
         </div>
+
     </section>
 
     <div class="popup" id="myForm">
@@ -180,17 +266,23 @@
             <div class="close-btn" onclick="closeForm()">&times;</div>
             <h1>Receba Novidades!</h1>
             <p>Fique por dentro do progresso do nosso site!</p>
-            <form class="form-container"></form>
-                <label for="name"><b>Nome</b></label>
-                <input class="input-form" type="text" placeholder="Nome">
+            <form action="../cad.php" method="get" class="form-container">
+                <label for="name">
+                    <b>Nome</b>
+                </label>
+                <input class="input-form" name="nome" type="text" placeholder="Nome">
 
-                <label for="email"><b>Email</b></label>
-                <input class="input-form" type="text" placeholder="Email">
+                <label for="email">
+                    <b>Email</b>
+                </label>
+                <input class="input-form" name="email" type="text" placeholder="Email">
 
-                <label for="phone"><b>Número</b></label>
-                <input class="input-form" type="tel" placeholder="Número do Telefone">
+                <label for="phone">
+                    <b>Número</b>
+                </label>
+                <input class="input-form" name="tel" type="tel" placeholder="Número do Telefone">
 
-                <button onclick="closeForm()" type="submit" class="btn">Enviar</button>
+                <input onclick="closeForm()" type="submit" class="btn" value="Enviar">
             </form>
         </div>
     </div>

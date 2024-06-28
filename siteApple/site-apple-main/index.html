@@ -14,15 +14,21 @@
     <!--JavaScript-->
     <script src="javascript/script.js"></script>
     <link rel="shortcut icon" href="imagens/logoico.ico" type="image/x-icon">
- </head>
- <body>
+</head>
+<body>
     <header id="cabecalho">
         <div class="container">
             <a href="index.html">
                 <img src="imagens/logo_apple_branco.png" alt="Logo branco" class="logo">
             </a>
             <nav id="menu">
-                <ul>
+                <input id="menu-hamburguer" type="checkbox"/>
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <ul class="menu-hamburguer-elements show">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#historia">História</a></li>
                     <li><a href="html/iphone.html">iPhone</a></li>
@@ -31,6 +37,7 @@
                     <li><a href="https://www.apple.com" target="_blank">Site Oficial</a></li>
                     <li><button class="abrir-form" onclick="openForm()">Receba Novidades</button></li>
                 </ul>
+                
             </nav>
         </div>
     </header>
@@ -46,44 +53,53 @@
     <section id="historia">
         <div class="container">
             <h2 class="titulo">História</h2>
-            <img src="imagens/oldiphone.jpg" alt="Primeiro iPhone">
-            <p>
-                A Apple foi fundada em 1976 por Steve Jobs, Steve Wozniak e Ronald Wayne na garagem de Jobs. 
-                Eles começaram com o lançamento do Apple I, um dos primeiros computadores pessoais. 
-                Em 1984, a empresa lançou o Macintosh, que foi um marco na história dos computadores pessoais, introduzindo uma interface gráfica de usuário e o mouse.
-            </p>
-            <p>
-                As gerações subsequentes do iPhone trouxeram melhorias significativas, como a introdução da App Store em 2008, que permitiu aos desenvolvedores criar e distribuir aplicativos para o iPhone. 
-                Em 2010, o iPhone 4 introduziu o Retina Display e a câmera frontal, enquanto o iPhone 4S, em 2011, trouxe a assistente virtual Siri.
-            </p>
-            <p>
-                Durante esses anos, a Apple expandiu sua linha de iPhones, lançando modelos como o iPhone 5, iPhone 5S, iPhone 6 e iPhone 6 Plus. O iOS, o sistema operacional dos iPhones, também passou por várias atualizações significativas.
-            </p>
-            <p>
-                A Apple continuou a inovar com recursos como reconhecimento facial (Face ID), câmeras aprimoradas e processadores mais poderosos. 
-                Além disso, introduziu novos modelos, como o iPhone X com design sem bordas e o iPhone SE, uma versão mais acessível.
-            </p>
-
+            <div class="content-historia">
+                <img src="imagens/oldiphone.jpg" alt="Primeiro iPhone">
+                <div class="texto-historia">
+                    <p>
+                        A Apple foi fundada em 1976 por Steve Jobs, Steve Wozniak e Ronald Wayne na garagem de Jobs. 
+                        Eles começaram com o lançamento do Apple I, um dos primeiros computadores pessoais. 
+                        Em 1984, a empresa lançou o Macintosh, que foi um marco na história dos computadores pessoais, introduzindo uma interface gráfica de usuário e o mouse.
+                    </p>
+                    <p>
+                        As gerações subsequentes do iPhone trouxeram melhorias significativas, como a introdução da App Store em 2008, que permitiu aos desenvolvedores criar e distribuir aplicativos para o iPhone. 
+                        Em 2010, o iPhone 4 introduziu o Retina Display e a câmera frontal, enquanto o iPhone 4S, em 2011, trouxe a assistente virtual Siri.
+                    </p>
+                    <p>
+                        Durante esses anos, a Apple expandiu sua linha de iPhones, lançando modelos como o iPhone 5, iPhone 5S, iPhone 6 e iPhone 6 Plus. O iOS, o sistema operacional dos iPhones, também passou por várias atualizações significativas.
+                    </p>
+                    <p>
+                        A Apple continuou a inovar com recursos como reconhecimento facial (Face ID), câmeras aprimoradas e processadores mais poderosos. 
+                        Além disso, introduziu novos modelos, como o iPhone X com design sem bordas e o iPhone SE, uma versão mais acessível.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
-
+    
     <div class="popup" id="myForm">
         <div class="overlay"></div>
         <div class="content">
             <div class="close-btn" onclick="closeForm()">&times;</div>
             <h1>Receba Novidades!</h1>
             <p>Fique por dentro do progresso do nosso site!</p>
-            <form class="form-container"></form>
-                <label for="name"><b>Nome</b></label>
-                <input class="input-form" type="text" placeholder="Nome">
+            <form action="../site-apple-main/cad.php" method="get" class="form-container">
+                <label for="name">
+                    <b>Nome</b>
+                </label>
+                <input class="input-form" name="nome" type="text" placeholder="Nome">
 
-                <label for="email"><b>Email</b></label>
-                <input class="input-form" type="text" placeholder="Email">
+                <label for="email">
+                    <b>Email</b>
+                </label>
+                <input class="input-form" name="email" type="text" placeholder="Email">
 
-                <label for="phone"><b>Número</b></label>
-                <input class="input-form" type="tel" placeholder="Número do Telefone">
+                <label for="phone">
+                    <b>Número</b>
+                </label>
+                <input class="input-form" name="tel" type="tel" placeholder="Número do Telefone">
 
-                <button onclick="closeForm()" type="submit" class="btn">Enviar</button>
+                <input onclick="closeForm()" type="submit" class="btn" value="Enviar">
             </form>
         </div>
     </div>
